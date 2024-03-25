@@ -94,14 +94,14 @@ function handleTranslateEN() {
   let neuroalign = "<span>Neuroalign</span>";
   let audio = "<span>audio-psycho-phonology</span>";
   let tomatis = "<span>Tomatis</span>";
-  let here = `<a class="contact_link" href="#method">or find out more about my approach to learning</a>`
+ 
   let language = {
     en: {
       modal_title: "Watch these videos to learn more:",
       who_link: "about me",
       contact_link: "contact",
       method_link: "in what sense?",
-      faq_link: 'FAQs',
+      faq_link: 'f.a.q.',
       subtitle: `The ${sense} motor teacher`,
       cta_title: "In what sense?",
       concept1: `Learning a ${lang} requires much more than just mental effort. Attention, working memory, cognitive flexibility, and calmness are essential elements for ${padroneggiare} a new language, learning, and communicating effectively.
@@ -127,7 +127,7 @@ function handleTranslateEN() {
       main_text3: `For over a decade, I have been using ${audio}(${tomatis} 4th level)`,
       // contact_btn: "Contact me",
       contact_txt: 'You can write me a message using the form or any of my contacts',
-      contact_txt_bottom: `${here}`,
+
       form_btn: "Send",
       name: "name",
       surname: "surname",
@@ -159,9 +159,9 @@ function handleTranslateEN() {
   main_text2.innerHTML = language.en.main_text2;
   main_text3.innerHTML = language.en.main_text3;
   contact_title.innerHTML = language.en.contact_title;
-  // contact_btn.innerHTML = language.en.contact_btn;
+ 
   contact_txt.innerHTML = language.en.contact_txt;
-  contact_txt_bottom.innerHTML = language.en.contact_txt_bottom
+
   form_btn.innerHTML = language.en.form_btn;
   name.innerHTML = language.en.name;
   surname.innerHTML = language.en.surname;
@@ -193,14 +193,14 @@ function handleTranslateIT() {
   let neuroalign = "<span>Neuroalign</span>";
   let audio = "<span>audio-psico-fonologia</span>";
   let tomatis = "<span>Tomatis</span>";
-  let here = `<a class="contact_link" href="#method">qui</a>`
+ 
   let language = {
     it: {
       modal_title: "Guarda questi video per approfondire:",
       who_link: "chi sono",
       contact_link: "contatti",
       method_link: `l'approccio`,
-      faq_link: 'FAQ',
+      faq_link: 'f.a.q.',
       cta_title: "In che senso?",
       subtitle: `insegnante in ${sense} motorio`,
       concept1: `Imparare una ${lang} richiede molto più di un semplice impegno mentale. Attenzione, memoria di lavoro, flessibilità cognitiva e calma sono elementi essenziali per ${padroneggiare} una nuova lingua, apprendere e comunicare al meglio.    
@@ -222,9 +222,9 @@ function handleTranslateIT() {
       main_text1: `Dopo la laurea alla ${scuola} divento insegnante di inglese e spagnolo. Per completare la mia formazione conseguo il diploma da ${asefop}`,
       main_text2: `Seguo i corsi sui disturbi dell’apprendimento e del linguaggio del Professor ${stella} e studio la relazione tra sensi, prassia, linguaggio e funzioni esecutive con la dottoressa ${maude} di Glen Mills, PA con la quale ottengo inoltre il ${icdl} e grazie alla quale conosco il metodo ${neuroalign} di cui divento provider`,
       main_text3: `Da oltre un decennio utilizzo l’${audio}(${tomatis} 4 ° livello)`,
-      // contact_btn: "Contattami",
+   
       contact_txt: ' Puoi scrivermi un messaggio usando il form o uno dei miei contatti',
-      contact_txt_bottom: `oppure scopri ${here} il mio approccio all'apprendimento`,
+    
       form_btn: "Invia",
       name: "nome",
       surname: "cognome",
