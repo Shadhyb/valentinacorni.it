@@ -238,7 +238,7 @@ html {
             padding-top: 1vh;
             padding-left: 8vw;
               z-index: 10;
-            color:$black;
+            color:Black;
             span {
               font-weight: 700;
             }
@@ -378,8 +378,8 @@ padding-bottom: 1.5em;
     }
     .concept {
       .key {
-        font-weight: 900;
-        font-size: 1.3em;
+        font-weight: 600;
+        font-size: 1.1em;
       }
     }
   }
@@ -690,6 +690,7 @@ padding-bottom: 1.5em;
         font-size: 2.5vw;
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
+        padding-bottom: 1em;
 
         @media (min-width: 660px) {
           gap: 1em;

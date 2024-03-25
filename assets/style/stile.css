@@ -272,7 +272,7 @@ html ul {
   padding-top: 1vh;
   padding-left: 8vw;
   z-index: 10;
-  color: #303030;
+  color: Black;
 }
 .container_fluid .welcome .hero .hero_inner .hero_text .subtitle span {
   font-weight: 700;
@@ -405,8 +405,8 @@ html ul {
   font-size: 1.1em;
 }
 .container_fluid #method .concept .key {
-  font-weight: 900;
-  font-size: 1.3em;
+  font-weight: 600;
+  font-size: 1.1em;
 }
 .container_fluid #where {
   width: 100vw;
@@ -654,6 +654,7 @@ html ul {
   font-size: 2.5vw;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+  padding-bottom: 1em;
 }
 @media (min-width: 660px) {
   .container_fluid #contact .contact_container .contact_text {
