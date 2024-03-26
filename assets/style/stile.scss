@@ -166,6 +166,7 @@ html {
         cursor: pointer;
         background-color: transparent;
         padding: 0;
+    filter: drop-shadow(5px 5px 10px #000000)
       }
       .btn_divider {
         width: 1.5em;
@@ -226,11 +227,11 @@ html {
             .subtitle {
             text-align: right;
              position: absolute;
-           bottom:1em;
-            left:40vw;
+            bottom:.65em;
+            right:5vw;
             padding-inline: 1.5em;
             margin-top: 0;
-            font-weight: 300;
+            font-weight: 400;
             font-size: 3.2vw;
             line-height: 1.7;
             padding-bottom: 0;
@@ -238,7 +239,7 @@ html {
             padding-top: 1vh;
             padding-left: 8vw;
               z-index: 10;
-            color:Black;
+      
             span {
               font-weight: 700;
             }
@@ -255,8 +256,8 @@ padding-bottom: 1.5em;
 .nav{
   display: flex;
   justify-content: center;
-  padding-inline: .6em;
-  gap:.6em;
+  padding-inline: .7em;
+  gap:1.2em;
   li{
 
     .nav_item{
@@ -264,7 +265,13 @@ padding-bottom: 1.5em;
       &:is(#who_link){}
       &:is(#contact_link){color:$blue}
       &:is(#faq_link){}
-      &:is(#method_link){color:$purple}
+      &:is(#method_link){
+        color:$purple;
+        display:none;
+        @media (min-width:1440px){
+          display: inline-block;
+        }
+      }
     }
   }
   }
