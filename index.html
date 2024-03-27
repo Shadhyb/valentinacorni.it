@@ -64,9 +64,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </button>
       
         <div class="btn_container">
-          <button id="en" onclick="handleTranslateEN()">EN</button>
+          <button id="en" onclick="handleTranslate('en')">EN</button>
 
-          <button class="hidden" id="it" onclick="handleTranslateIT()">
+          <button class="hidden" id="it" onclick="handleTranslate('it')">
             IT
           </button>
         </div>
@@ -627,13 +627,13 @@ Il mio mestiere è quello di andare per step, in un approccio rispettoso e che s
               Puoi scrivermi un messaggio usando il form o uno dei miei contatti
             </p> 
             <ul class="contact_list">
-              <li data-aos="fade-left">San Lazzaro di Savena</li>
+              <li id="address" data-aos="fade-left">San Lazzaro di Savena</li>
               <li data-aos="fade-left" data-aos-delay="50" >
-                <a class="tel" href="tel: +39 3382468506">+39 3382468506</a>
+                <a id="contact_phone" class="tel" href="tel: +39 3382468506">+39 3382468506</a>
               </li>
 
               <li data-aos="fade-left" data-aos-delay="100" >
-                <a class="mail" href="mailto:valentina@hum.team">valentina@hum.team</a>
+                <a id="contact_mail"class="mail" href="mailto:valentina@hum.team">valentina@hum.team</a>
               </li>
             </ul>
 
@@ -673,25 +673,25 @@ Il mio mestiere è quello di andare per step, in un approccio rispettoso e che s
             
               <form id="form" method="post" action="send_email.php" >
               <div class="form__group field">
-                <label class="form__label" >nome</label>
-                <input class="form__field" type="text"  name="name" id="name" />
+                <label class="form__label"id="name" >nome</label>
+                <input class="form__field" type="text"  name="name"  />
               </div>
               <div class="form__group field">
-                <label class="form__label" for="surname">cognome</label>
-                <input class="form__field" type="text" name="surname" id="surname" />
+                <label class="form__label" for="surname" id="surname" >cognome</label>
+                <input class="form__field" type="text" name="surname" />
               </div>
              
               <div class="form__group field">
-                <label class="form__label" for="email">email</label>
-                <input class="form__field" type="text" name="email" id="email" />
+                <label class="form__label" for="email" id="email">email</label>
+                <input class="form__field" type="text" name="email"  />
               </div>
               <div class="form__group field">
-                <label class="form__label" for="phone">telefono</label>
-                <input class="form__field" type="tel" name="phone" id="phone" />
+                <label class="form__label" for="phone" id="phone">telefono</label>
+                <input class="form__field" type="tel" name="phone"  />
               </div>
                <div class="form__group field">
-                 <label  class="form__label" for="message">messaggio</label>
-                <textarea rows="4" columns="10" class="form__field" type="text" name="message" id="message" ></textarea>
+                 <label  class="form__label" for="message" id="message">messaggio</label>
+                <textarea rows="4" columns="10" class="form__field" type="text" name="message"  ></textarea>
               </div>
               <div class="form__group field privacy">
               

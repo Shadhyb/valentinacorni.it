@@ -191,7 +191,7 @@ html ul {
   position: absolute;
   top: 1.5em;
   border-radius: 0.8em;
-  padding: 0.3em;
+  padding: 0.5em;
   right: 1em;
   display: flex;
   flex-direction: column;
@@ -203,6 +203,8 @@ html ul {
   cursor: pointer;
   background-color: transparent;
   padding: 0;
+  width: 20px;
+  height: 20px;
   filter: drop-shadow(5px 5px 10px #000000);
 }
 .container_fluid .header .btn_container .btn_divider {
