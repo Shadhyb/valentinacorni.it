@@ -647,7 +647,8 @@ html ul {
 }
 @media (min-width: 660px) {
   .container_fluid #contact .contact_container {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 .container_fluid #contact .contact_container .contact_text {
@@ -657,9 +658,8 @@ html ul {
   gap: 0.8em;
   background-color: #00389c;
   color: #f6f9fd;
-  max-width: 320px;
   padding-inline: 1em;
-  font-size: 2.5vw;
+  font-size: 2vw;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding-bottom: 1em;
@@ -673,16 +673,13 @@ html ul {
     max-width: none;
   }
 }
-.container_fluid #contact .contact_container .contact_text .txt {
-  font-size: 2.5vw;
+.container_fluid #contact .contact_container .contact_text .contact_txt {
+  font-size: 2vw;
 }
 .container_fluid #contact .contact_container .contact_text #contact_title {
   font-weight: 600;
   margin-bottom: 0;
   padding-top: 1em;
-}
-.container_fluid #contact .contact_container .contact_text .contact_list {
-  height: 10svh;
 }
 .container_fluid #contact .contact_container .contact_text .contact_list li {
   font-weight: 200;
@@ -695,7 +692,7 @@ html ul {
 }
 @media (min-width: 900px) {
   .container_fluid #contact .contact_container .contact_text .contact_list li {
-    font-size: 1.2em;
+    font-size: 2vw;
   }
 }
 .container_fluid #contact .contact_container .contact_text .social {
@@ -740,7 +737,6 @@ html ul {
   justify-content: center;
   position: relative;
   width: 100%;
-  max-width: 320px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-top: 1em;
