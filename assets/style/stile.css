@@ -355,22 +355,7 @@ html ul {
   padding-inline: 2.2em;
   font-weight: 200;
   display: inline-block;
-}
-@media (min-width: 660px) {
-  .container_fluid #method .floating .concept {
-    line-height: 2;
-    font-size: 1.15em;
-  }
-}
-@media (min-width: 1024px) {
-  .container_fluid #method .floating .concept {
-    font-size: 1.25em;
-  }
-}
-@media (min-width: 1440px) {
-  .container_fluid #method .floating .concept {
-    font-size: 1.5em;
-  }
+  font-size: 1.1em;
 }
 .container_fluid #method .floating .concept:is(#concept2) {
   text-align: left;
@@ -392,7 +377,7 @@ html ul {
   justify-content: end;
 }
 .container_fluid #method .button_container #discover {
-  font-size: 3.2vw;
+  font-size: 0.8em;
   padding-inline: 1.2em;
 }
 .container_fluid #method img {
@@ -448,7 +433,7 @@ html ul {
   right: 1.2em;
 }
 .container_fluid #where .where_container .bottom {
-  font-size: 3.2vw;
+  font-size: 2.35vw;
   line-height: 1.6;
   font-weight: 300;
 }
@@ -472,7 +457,7 @@ html ul {
 }
 .container_fluid #whom .list_container .list {
   padding-inline: 1.5em;
-  font-size: 3vw;
+  font-size: 2.35vw;
   line-height: 1.7;
   font-weight: 200;
 }
@@ -532,7 +517,7 @@ html ul {
   line-height: 1.7;
   text-wrap: wrap;
   text-align: right;
-  font-size: 3.2vw;
+  font-size: 2.35vw;
 }
 .container_fluid #who .main_container .main_content .fluid_content .main_content:is(.center) {
   text-align: center;
@@ -576,7 +561,7 @@ html ul {
   padding-inline: 1.7em;
   padding-top: 1.3em;
   text-align: right;
-  font-size: 2.8vw;
+  font-size: 2.2vw;
 }
 .container_fluid #faq .faq_bottom_text span {
   font-weight: 500;
@@ -698,7 +683,7 @@ html ul {
 .container_fluid #contact .contact_container .contact_text .social {
   display: flex;
   gap: 1em;
-  padding-bottom: 1em;
+  padding: 1.2em 0;
   align-items: center;
 }
 .container_fluid #contact .contact_container .contact_text .social a {
@@ -842,6 +827,7 @@ html ul {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  padding-inline: 1.2em;
 }
 .container_fluid #contact .contact_container .contact_form form .form_btn_container .form_btn {
   display: flex;
@@ -857,6 +843,11 @@ html ul {
   background: #e0b13b;
   color: #303030;
   margin-top: 2em;
+}
+@media (min-width: 1024px) {
+  .container_fluid #contact .contact_container .contact_form form .form_btn_container .form_btn {
+    padding: 0.6em 0.8em;
+  }
 }
 .container_fluid #contact .contact_container .contact_form form .form_btn_container .check {
   border-radius: 50%;

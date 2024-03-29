@@ -329,16 +329,17 @@ padding-bottom: 1.5em;
         padding-inline: 2.2em;
         font-weight: 200;
         display: inline-block;
-        @media (min-width: 660px) {
-          line-height: 2;
-          font-size: 1.15em;
-        }
-        @media (min-width: 1024px) {
-          font-size: 1.25em;
-        }
-        @media (min-width: 1440px) {
-          font-size: 1.5em;
-        }
+        font-size: 1.1em;
+        // @media (min-width: 660px) {
+        //   line-height: 2;
+        //   font-size: 1.15em;
+        // }
+        // @media (min-width: 1024px) {
+        //   font-size: 1.25em;
+        // }
+        // @media (min-width: 1440px) {
+        //   font-size: 1.5em;
+        // }
         &:is(#concept2) {
           text-align: left;
           background-color: $blue;
@@ -361,7 +362,7 @@ padding-bottom: 1.5em;
       display: flex;
       justify-content: end;
       #discover{
-        font-size: 3.2vw;
+        font-size: .8em;
         padding-inline: 1.2em;
       }
     }
@@ -427,7 +428,7 @@ padding-bottom: 1.5em;
     }
   }
   .bottom{
-    font-size: 3.2vw;;
+    font-size: 2.35vw;;
     line-height: 1.6;
     font-weight:300;
     
@@ -480,7 +481,7 @@ padding-bottom: 1.5em;
 
       .list {
         padding-inline: 1.5em;
-        font-size: 3vw;
+        font-size: 2.35vw;
         line-height: 1.7;
         font-weight: 200;
         @media (min-width: 660px) {
@@ -546,7 +547,7 @@ padding-bottom: 1.5em;
             line-height: 1.7;
             text-wrap: wrap;
             text-align: right;
-            font-size: 3.2vw;
+            font-size: 2.35vw;
           
        
             &:is(.center) {
@@ -600,7 +601,7 @@ padding-bottom: 1.5em;
         padding-inline: 1.7em;
         padding-top: 1.3em;
         text-align: right;
-        font-size: 2.8vw;
+        font-size: 2.2vw;
         
         span{
           font-weight: 500;
@@ -747,7 +748,7 @@ padding-bottom: 1.5em;
         .social {
           display: flex;
           gap: 1em;
-          padding-bottom: 1em;
+          padding: 1.2em 0;
          
           align-items: center;
           a {
@@ -909,6 +910,7 @@ padding-bottom: 1.5em;
             display: flex;
             align-items: baseline;
             justify-content: space-between;
+            padding-inline: 1.2em;
 
             .form_btn {
               display: flex;
@@ -924,6 +926,8 @@ padding-bottom: 1.5em;
               background: $yellow;
               color: $black;
               margin-top: 2em;
+              @media(min-width: 1024px){
+                padding:.6em .8em              }
             }
             .check {
               border-radius: 50%;
