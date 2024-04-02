@@ -575,6 +575,8 @@ html ul {
 .container_fluid #faq .accordion .accordion-item .accordion-header .accordion-button {
   width: 100%;
   font-weight: 500;
+  text-wrap: pretty;
+  padding-inline: 1em;
 }
 .container_fluid #faq .accordion .accordion-item .accordion-header .accordion-button:focus {
   border: none;
@@ -587,7 +589,7 @@ html ul {
 }
 .container_fluid #faq .accordion .accordion-item .accordion-body {
   font-size: 0.9em;
-  text-wrap: balance;
+  text-wrap: pretty;
   white-space: initial;
   text-align: justify;
   line-height: 1.8;

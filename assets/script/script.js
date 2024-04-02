@@ -1,7 +1,4 @@
-// function toggleMobileMenu() {
-//   document.querySelector("#nav").classList.toggle("active");
-//   document.querySelector(".mobile-bar").classList.toggle("active");
-// }
+
 
 
 
@@ -84,7 +81,7 @@ function handleTranslate(language) {
     .then(response => response.json())
     .then(data => {
       const translations = data[language];
- if (language == 'en') {
+    if(language === 'en') {
            enBtn.classList.add("hidden");
            itBtn.classList.remove("hidden");
       } else {
@@ -113,7 +110,7 @@ function handleTranslate(language) {
         contact_title.innerHTML = translations.contact_title;
         contact_txt.innerHTML = translations.contact_txt;
         form_btn.innerHTML = translations.form_btn;
-        name.innerHTML = translations.name;
+        firstname.innerHTML = translations.firstname;
         surname.innerHTML = translations.surname;
         phone.innerHTML = translations.phone;
         message.innerHTML = translations.message;
@@ -145,7 +142,7 @@ function handleTranslate(language) {
         accordion_body_eleven.innerHTML = translations.accordion_body_eleven;
         accordion_body_twelve.innerHTML = translations.accordion_body_twelve;
         faq_bottom_text.innerHTML = translations.faq_bottom_text;
-        address.innerHTML = translation.address;
+        address.innerHTML = translations.address;
         contact_phone.innerHTML = translations.contact_phone;
         contact_mail.innerHTML = translations.contact_mail
       })
@@ -176,7 +173,10 @@ function handleTranslate(language) {
 
    };
 
-   const form = document.getElementById('form');
+
+const form = document.getElementById('form');
+   
+
 
    form.addEventListener('submit', function (event) {
      const formValues = {
@@ -185,8 +185,10 @@ function handleTranslate(language) {
           email: form.elements.email.value,
           phone: form.elements.phone.value,
           message: form.elements.message.value,
-          privacy: form.element.privacy.value
+       privacy: form.element.privacy.value,
+         
      };
+       
      event.preventDefault()
      
 
