@@ -6,7 +6,7 @@
   box-sizing: border-box;
   text-wrap: balance;
   list-style-type: none;
-
+   font-size: 1rem;  
   ::-webkit-scrollbar {
     background-color: transparent;
     width: 0;
@@ -28,7 +28,7 @@ html {
   list-style-type: none;
   font-family: Gilroy, sans-serif;
   line-height: 1.4;
-
+   font-size: calc(60% + 0.8vmin);
 
   color: $black;
 
@@ -39,6 +39,12 @@ html {
       text-decoration: underline;
     }
   }
+  // h1{
+  //  font-size: 2.2rem;
+  // }
+  h2 {
+   font-size: 1.6rem;
+}
   h1,
   h2,
   h3 {
@@ -46,6 +52,7 @@ html {
   }
   h3 {
     font-size: 6.5vw;
+
 
   }
   ul {
@@ -74,7 +81,7 @@ html {
   align-items: baseline;
   justify-content: space-between;
   p {
-    font-size: 1.2em;
+   
   }
 
   .btn-close {
@@ -131,12 +138,12 @@ html {
   background-color: $white;
   #btn-back-to-top {
   position: fixed;
-  background-color: $purple;
-
+  color: $black;
+  border-color: $black;
   border-radius: 50%;
-  border:none;
+  background-color: transparent;
   bottom: 60px;
-  right: 15px;
+  right: 16px;
   display: none;
 
 }
@@ -217,7 +224,7 @@ html {
           width: 100%;
           padding:1.5em;
           .title {
-            font-size: 8vw;
+             font-size: 8vw;
             font-weight: 700;
             text-wrap: nowrap;
             margin: 0;
@@ -234,7 +241,7 @@ html {
             padding-inline: 1.5em;
             margin-top: 0;
             font-weight: 400;
-            font-size: 3.2vw;
+             font-size: 3.2vw;
             line-height: 1.7;
             padding-bottom: 0;
             margin-bottom: 0;
@@ -244,6 +251,7 @@ html {
       
             span {
               font-weight: 700;
+                font-size: 3.2vw;
             }
           }
         }
@@ -263,7 +271,7 @@ padding-bottom: 1.5em;
   li{
 
     .nav_item{
-      font-size:3vw;
+     
       &:is(#who_link){}
       &:is(#contact_link){color:$blue}
       &:is(#faq_link){}
@@ -306,11 +314,11 @@ padding-bottom: 1.5em;
 
       cursor: pointer;
       @media (min-width: 660px) {
-        font-size: 1em;
+       
         margin-left: 2em;
       }
       @media (min-width: 780px) {
-        font-size: 1.3em;
+    
       }
     }
 
@@ -318,7 +326,7 @@ padding-bottom: 1.5em;
       text-align: right;
       text-wrap: balance;
       line-height: 1.7;
-      font-size: 0.9em;
+     
       display: flex;
       flex-direction: column;
       flex-wrap: nowrap;
@@ -329,17 +337,7 @@ padding-bottom: 1.5em;
         padding-inline: 2.2em;
         font-weight: 200;
         display: inline-block;
-        font-size: 1.1em;
-        // @media (min-width: 660px) {
-        //   line-height: 2;
-        //   font-size: 1.15em;
-        // }
-        // @media (min-width: 1024px) {
-        //   font-size: 1.25em;
-        // }
-        // @media (min-width: 1440px) {
-        //   font-size: 1.5em;
-        // }
+ 
         &:is(#concept2) {
           text-align: left;
           background-color: $blue;
@@ -362,7 +360,7 @@ padding-bottom: 1.5em;
       display: flex;
       justify-content: end;
       #discover{
-        font-size: .8em;
+    
         padding-inline: 1.2em;
       }
     }
@@ -384,12 +382,12 @@ padding-bottom: 1.5em;
 
     span {
       font-weight: 500;
-      font-size: 1.1em;
+
     }
     .concept {
       .key {
         font-weight: 600;
-        font-size: 1.1em;
+  
       }
     }
   }
@@ -428,7 +426,7 @@ padding-bottom: 1.5em;
     }
   }
   .bottom{
-    font-size: 2.35vw;;
+    
     line-height: 1.6;
     font-weight:300;
     
@@ -481,7 +479,7 @@ padding-bottom: 1.5em;
 
       .list {
         padding-inline: 1.5em;
-        font-size: 2.35vw;
+      
         line-height: 1.7;
         font-weight: 200;
         @media (min-width: 660px) {
@@ -510,6 +508,7 @@ padding-bottom: 1.5em;
           display: flex;
           flex-direction: column;
           gap: 2em;
+         
 
           .main_img {
             img {
@@ -547,7 +546,11 @@ padding-bottom: 1.5em;
             line-height: 1.7;
             text-wrap: wrap;
             text-align: right;
-            font-size: 2.35vw;
+            
+            @media(min-width: 660px){
+                 text-align: center;
+            }
+          
           
        
             &:is(.center) {
@@ -592,7 +595,7 @@ padding-bottom: 1.5em;
     text-align: right;
     padding-right: 3em;
       .faq_title{
-      font-size: .5em;
+     
       }
    
 
@@ -601,7 +604,7 @@ padding-bottom: 1.5em;
         padding-inline: 1.7em;
         padding-top: 1.3em;
         text-align: right;
-        font-size: 2.2vw;
+        
         
         span{
           font-weight: 500;
@@ -635,7 +638,7 @@ padding-bottom: 1.5em;
         }
         .accordion-body{
      
-          font-size: .9em;
+        
           text-wrap: pretty;
           white-space:initial ;
           text-align: justify ;
@@ -704,7 +707,7 @@ padding-bottom: 1.5em;
         color: $white;
         
         padding-inline: 1em;
-        font-size: 2vw;
+        
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
         padding-bottom: 1em;
@@ -717,7 +720,7 @@ padding-bottom: 1.5em;
           max-width: none;
         }
         .contact_txt{
-          font-size: 2vw;
+        
       
         }
         #contact_title {
@@ -745,7 +748,7 @@ padding-bottom: 1.5em;
 
 
             @media (min-width: 900px) {
-             font-size: 2vw;
+           
             }
           }
         }
@@ -756,11 +759,11 @@ padding-bottom: 1.5em;
          
           align-items: center;
           a {
-            font-size: 0.7em;
+            
             color: $white;
             
             @media (min-width: 900px) {
-              font-size: 1em;
+              
             }
             svg {
               fill: $white;
@@ -781,7 +784,7 @@ padding-bottom: 1.5em;
             }
           }
           @media (min-width: 660px) {
-            font-size: 1em;
+          
           }
         }
       }
@@ -816,6 +819,9 @@ padding-bottom: 1.5em;
             padding: 0.98em 0 0;
             margin-top: 0.75em;
             width: 100%;
+            #privacy_text{
+              display:initial;
+            }
           &:is(.privacy){
               text-align: end;
             }
@@ -827,7 +833,7 @@ padding-bottom: 1.5em;
             border: 0;
             border-bottom: 2px solid $gray;
             outline: 0;
-            font-size: 2vw;
+         
             color: $black;
             padding: 0.45em 0;
             background: transparent;
@@ -857,7 +863,7 @@ padding-bottom: 1.5em;
             }
 
             &:placeholder-shown ~ .form__label {
-              font-size: 1rem;
+            
               cursor: text;
               top: 20px;
             }
@@ -869,7 +875,7 @@ padding-bottom: 1.5em;
             right: 0;
             display: block;
             transition: 0.2s;
-            font-size: 2.2vw;
+          
             color: $black;
             background-color: transparent;
 
@@ -886,7 +892,7 @@ padding-bottom: 1.5em;
               top: 0;
               display: block;
               transition: 0.2s;
-              font-size: 1rem;
+              
               color: $yellow;
               background-color: transparent;
               font-weight: 200;
@@ -961,7 +967,7 @@ padding-bottom: 1.5em;
     padding: 0.5em;
     font-weight: 400;
     border-top: 0.01em solid $black;
-    font-size: .7em;
+     font-size: .7em;
         @media(min-width: 440px){
           font-size:.9em;
       text-align: center;

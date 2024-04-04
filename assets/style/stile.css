@@ -42,6 +42,7 @@
   box-sizing: border-box;
   text-wrap: balance;
   list-style-type: none;
+  font-size: 1rem;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -61,6 +62,7 @@ html {
   list-style-type: none;
   font-family: Gilroy, sans-serif;
   line-height: 1.4;
+  font-size: calc(60% + 0.8vmin);
   color: #303030;
 }
 body a,
@@ -71,6 +73,10 @@ html a {
 body a:is(.policy_link),
 html a:is(.policy_link) {
   text-decoration: underline;
+}
+body h2,
+html h2 {
+  font-size: 1.6rem;
 }
 body h1,
 body h2,
@@ -109,9 +115,6 @@ html ul {
   display: flex;
   align-items: baseline;
   justify-content: space-between;
-}
-.mod .flex p {
-  font-size: 1.2em;
 }
 .mod .flex .btn-close {
   background: transparent;
@@ -169,11 +172,12 @@ html ul {
 }
 .container_fluid #btn-back-to-top {
   position: fixed;
-  background-color: #8d608b;
+  color: #303030;
+  border-color: #303030;
   border-radius: 50%;
-  border: none;
+  background-color: transparent;
   bottom: 60px;
-  right: 15px;
+  right: 16px;
   display: none;
 }
 .container_fluid .header {
@@ -278,6 +282,7 @@ html ul {
 }
 .container_fluid .welcome .hero .hero_inner .hero_text .subtitle span {
   font-weight: 700;
+  font-size: 3.2vw;
 }
 .container_fluid .navbar {
   width: 100vw;
@@ -290,9 +295,6 @@ html ul {
   justify-content: center;
   padding-inline: 0.7em;
   gap: 1.2em;
-}
-.container_fluid .navbar .nav li .nav_item {
-  font-size: 3vw;
 }
 .container_fluid .navbar .nav li .nav_item:is(#contact_link) {
   color: #00389c;
@@ -333,20 +335,13 @@ html ul {
 }
 @media (min-width: 660px) {
   .container_fluid #method .btn {
-    font-size: 1em;
     margin-left: 2em;
-  }
-}
-@media (min-width: 780px) {
-  .container_fluid #method .btn {
-    font-size: 1.3em;
   }
 }
 .container_fluid #method .floating {
   text-align: right;
   text-wrap: balance;
   line-height: 1.7;
-  font-size: 0.9em;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -355,7 +350,6 @@ html ul {
   padding-inline: 2.2em;
   font-weight: 200;
   display: inline-block;
-  font-size: 1.1em;
 }
 .container_fluid #method .floating .concept:is(#concept2) {
   text-align: left;
@@ -377,7 +371,6 @@ html ul {
   justify-content: end;
 }
 .container_fluid #method .button_container #discover {
-  font-size: 0.8em;
   padding-inline: 1.2em;
 }
 .container_fluid #method img {
@@ -395,11 +388,9 @@ html ul {
 }
 .container_fluid #method span {
   font-weight: 500;
-  font-size: 1.1em;
 }
 .container_fluid #method .concept .key {
   font-weight: 600;
-  font-size: 1.1em;
 }
 .container_fluid #where {
   width: 100vw;
@@ -433,7 +424,6 @@ html ul {
   right: 1.2em;
 }
 .container_fluid #where .where_container .bottom {
-  font-size: 2.35vw;
   line-height: 1.6;
   font-weight: 300;
 }
@@ -457,7 +447,6 @@ html ul {
 }
 .container_fluid #whom .list_container .list {
   padding-inline: 1.5em;
-  font-size: 2.35vw;
   line-height: 1.7;
   font-weight: 200;
 }
@@ -517,7 +506,11 @@ html ul {
   line-height: 1.7;
   text-wrap: wrap;
   text-align: right;
-  font-size: 2.35vw;
+}
+@media (min-width: 660px) {
+  .container_fluid #who .main_container .main_content .fluid_content .main_content {
+    text-align: center;
+  }
 }
 .container_fluid #who .main_container .main_content .fluid_content .main_content:is(.center) {
   text-align: center;
@@ -554,14 +547,10 @@ html ul {
   text-align: right;
   padding-right: 3em;
 }
-.container_fluid #faq .faq_title_container .faq_title {
-  font-size: 0.5em;
-}
 .container_fluid #faq .faq_bottom_text {
   padding-inline: 1.7em;
   padding-top: 1.3em;
   text-align: right;
-  font-size: 2.2vw;
 }
 .container_fluid #faq .faq_bottom_text span {
   font-weight: 500;
@@ -588,7 +577,6 @@ html ul {
   font-weight: 600;
 }
 .container_fluid #faq .accordion .accordion-item .accordion-body {
-  font-size: 0.9em;
   text-wrap: pretty;
   white-space: initial;
   text-align: justify;
@@ -646,7 +634,6 @@ html ul {
   background-color: #00389c;
   color: #f6f9fd;
   padding-inline: 1em;
-  font-size: 2vw;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   padding-bottom: 1em;
@@ -659,9 +646,6 @@ html ul {
     border-bottom-left-radius: 10px;
     max-width: none;
   }
-}
-.container_fluid #contact .contact_container .contact_text .contact_txt {
-  font-size: 2vw;
 }
 .container_fluid #contact .contact_container .contact_text #contact_title {
   font-weight: 600;
@@ -677,11 +661,6 @@ html ul {
 .container_fluid #contact .contact_container .contact_text .contact_list li a:is(.tel, .mail):hover {
   color: #e0b13b;
 }
-@media (min-width: 900px) {
-  .container_fluid #contact .contact_container .contact_text .contact_list li {
-    font-size: 2vw;
-  }
-}
 .container_fluid #contact .contact_container .contact_text .social {
   display: flex;
   gap: 1em;
@@ -689,13 +668,7 @@ html ul {
   align-items: center;
 }
 .container_fluid #contact .contact_container .contact_text .social a {
-  font-size: 0.7em;
   color: #f6f9fd;
-}
-@media (min-width: 900px) {
-  .container_fluid #contact .contact_container .contact_text .social a {
-    font-size: 1em;
-  }
 }
 .container_fluid #contact .contact_container .contact_text .social a svg {
   fill: #f6f9fd;
@@ -711,11 +684,6 @@ html ul {
 }
 .container_fluid #contact .contact_container .contact_text p a:is(.contact_link) {
   text-decoration: underline;
-}
-@media (min-width: 660px) {
-  .container_fluid #contact .contact_container .contact_text p {
-    font-size: 1em;
-  }
 }
 .container_fluid #contact .contact_container .contact_form {
   display: flex;
@@ -748,6 +716,9 @@ html ul {
   margin-top: 0.75em;
   width: 100%;
 }
+.container_fluid #contact .contact_container .contact_form form .form__group #privacy_text {
+  display: initial;
+}
 .container_fluid #contact .contact_container .contact_form form .form__group:is(.privacy) {
   text-align: end;
 }
@@ -757,7 +728,6 @@ html ul {
   border: 0;
   border-bottom: 2px solid rgba(220, 217, 217, 0.7843137255);
   outline: 0;
-  font-size: 2vw;
   color: #303030;
   padding: 0.45em 0;
   background: transparent;
@@ -773,12 +743,10 @@ html ul {
   color: transparent;
 }
 .container_fluid #contact .contact_container .contact_form form .form__field:-moz-placeholder-shown ~ .form__label {
-  font-size: 1rem;
   cursor: text;
   top: 20px;
 }
 .container_fluid #contact .contact_container .contact_form form .form__field:placeholder-shown ~ .form__label {
-  font-size: 1rem;
   cursor: text;
   top: 20px;
 }
@@ -788,7 +756,6 @@ html ul {
   right: 0;
   display: block;
   transition: 0.2s;
-  font-size: 2.2vw;
   color: #303030;
   background-color: transparent;
 }
@@ -810,7 +777,6 @@ html ul {
   top: 0;
   display: block;
   transition: 0.2s;
-  font-size: 1rem;
   color: #e0b13b;
   background-color: transparent;
   font-weight: 200;
