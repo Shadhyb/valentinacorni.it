@@ -139,6 +139,7 @@ html {
   #btn-back-to-top {
   position: fixed;
   color: $black;
+  mix-blend-mode: difference;
   border-color: $black;
   border-radius: 50%;
   background-color: transparent;

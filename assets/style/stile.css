@@ -173,6 +173,7 @@ html ul {
 .container_fluid #btn-back-to-top {
   position: fixed;
   color: #303030;
+  mix-blend-mode: difference;
   border-color: #303030;
   border-radius: 50%;
   background-color: transparent;
