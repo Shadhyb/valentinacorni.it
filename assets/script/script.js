@@ -185,7 +185,7 @@ const form = document.getElementById('form');
           email: form.elements.email.value,
           phone: form.elements.phone.value,
           message: form.elements.message.value,
-       privacy: form.element.privacy.value,
+          privacy: form.element.privacy.value,
          
      };
        
